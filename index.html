@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibecraft ✦ Mood Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header>
+    <h1>✦ Vibecraft</h1>
+    <p class="tagline">Craft your vibe. Feel the moment.</p>
+  </header>
+
+  <main>
+    <!-- Mood Selector -->
+    <section class="mood-section">
+      <h2>What's your vibe right now?</h2>
+      <div class="mood-grid" id="moodGrid">
+        <button class="mood-btn" data-mood="chill" style="--accent:#7dd3fc">😌 Chill</button>
+        <button class="mood-btn" data-mood="energized" style="--accent:#fbbf24">⚡ Energized</button>
+        <button class="mood-btn" data-mood="melancholy" style="--accent:#818cf8">🌧 Melancholy</button>
+        <button class="mood-btn" data-mood="romantic" style="--accent:#f9a8d4">🌸 Romantic</button>
+        <button class="mood-btn" data-mood="focused" style="--accent:#34d399">🎯 Focused</button>
+        <button class="mood-btn" data-mood="wild" style="--accent:#fb923c">🔥 Wild</button>
+        <button class="mood-btn" data-mood="dreamy" style="--accent:#c084fc">🌙 Dreamy</button>
+        <button class="mood-btn" data-mood="nostalgic" style="--accent:#fdba74">🍂 Nostalgic</button>
+      </div>
+    </section>
+
+    <!-- Vibe Output -->
+    <section class="vibe-output hidden" id="vibeOutput">
+      <div class="vibe-card">
+        <div class="vibe-header">
+          <span class="vibe-emoji" id="vibeEmoji"></span>
+          <h2 class="vibe-title" id="vibeTitle"></h2>
+        </div>
+
+        <div class="vibe-content">
+          <!-- Color Palette -->
+          <div class="vibe-block">
+            <h3>Color Palette</h3>
+            <div class="palette" id="palette"></div>
+          </div>
+
+          <!-- Vibe Words -->
+          <div class="vibe-block">
+            <h3>Aesthetic Words</h3>
+            <div class="tags" id="tags"></div>
+          </div>
+
+          <!-- Music -->
+          <div class="vibe-block">
+            <h3>Soundtrack</h3>
+            <ul class="music-list" id="musicList"></ul>
+          </div>
+
+          <!-- Vibe Quote -->
+          <div class="vibe-block quote-block">
+            <blockquote id="vibeQuote"></blockquote>
+          </div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">✦ Regenerate Vibe</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ✦ Vibecraft &mdash; 2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
